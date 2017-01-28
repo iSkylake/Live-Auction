@@ -25,4 +25,8 @@ var app = angular.module('myApp', [
         url: "/create_auction",
         templateUrl: "app/create_auction/create_auction.html"
       })
+      .state('bid_spike', {
+        url: '/bid_spike',
+        templateUrl: 'app/spike/bid_spike.html'
+      })
   });
