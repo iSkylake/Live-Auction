@@ -1,11 +1,19 @@
 var express = require('express'),
+	logger = require('morgan'),
+	cookieParser = require('cookie-parser'),
 	bodyParser = require('body-parser'),
 	mongoose = require('mongoose'),
 	path = require('path'),
-	app = express();
+	app = express(),
+	hash = require('bcrypt-nodejs'),
+	path = require('path'),
+	passport = require('passport'),
+	localStrategy = require('passport-local' ).Strategy;
 
 	// Bid = require('./model/bid.js');
 
+var User = require('./server/models/User.js');
+require('./server/config/passport.js');
 // var TestDB = require('testDB.js');
 require('./server/config/mongoose.js')
 
@@ -17,7 +25,13 @@ app.use(bodyParser.json());
 
 app.use(bodyParser.urlencoded({extended:true}));
 
-
+app.use(require('express-session')({
+    secret: 'keyboard cat',
+    resave: false,
+    saveUninitialized: false
+}));
+app.use(passport.initialize());
+app.use(passport.session());
 app.use(routes);
 
 // TestDB();
