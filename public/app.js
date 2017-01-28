@@ -21,4 +21,8 @@ var app = angular.module('myApp', [
         url: "/private_demo",
         templateUrl: "app/private_demo/private_demo.html"
       })
+      .state('create_auction', {
+        url: "/create_auction",
+        templateUrl: "app/create_auction/create_auction.html"
+      })
   });
