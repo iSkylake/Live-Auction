@@ -1,5 +1,5 @@
 angular.module('myApp')
-	.controller('BidCtrl', function($stateParams, $http, $interval) {
+	.controller('BidCtrl', function($stateParams, $http, $interval, $timeout) {
 		var bidCtrl = this;
 
 		bidCtrl.setBid = '';
@@ -18,9 +18,10 @@ angular.module('myApp')
 		bidCtrl.postBid = function(bid) {
 			$('#bidList').append('<div>George Yu: $25</div>');
 			bidCtrl.currentBid = 25
-			$('#winnerModal').modal({
+
+			$timeout($('#winnerModal').modal({
         		show: 'true'
-    		}); 
+    		}),3000); 
 		}
 
 		$interval( function(){ $('#bidList').append('<div>Kyle Shin: $10</div>'); bidCtrl.currentBid = 10;}, 1000, true);
