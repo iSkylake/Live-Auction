@@ -65,7 +65,7 @@ angular.module('myApp')
 
 
 		marketCtrl.itemList = [];
-		marketCtrl.postAuction = function(title, owner, image, description, startTime) {
+		marketCtrl.postAuction = function(title, description, image, startDate, startTime, auctionLength, startBid, minBid) {
 			marketService.postItem(title, owner, image, description, startTime)
 				.then(function successCallback(response) {
 					console.log('successfully posted item', response);
@@ -92,12 +92,12 @@ angular.module('myApp')
 
 		marketCtrl.auctionTitle = 'hey';
 		marketCtrl.auctionDescription = 'hey';
+		marketCtrl.image ='hey';
 		marketCtrl.auctionStartDate ='hey';
 		marketCtrl.auctionStartTime = 'hey';
 		marketCtrl.auctionLength = 'hey';
 		marketCtrl.startBid = 'hey';
 		marketCtrl.minBid = 'hey';
-		marketCtrl.insertPhoto ='hey';
 
 
 
