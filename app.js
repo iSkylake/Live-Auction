@@ -5,7 +5,7 @@ var express = require('express'),
 
 var Auction = require('./model/auction.js'),
 	User = require('./model/user.js'),
-	Bid = require('./model/bid/js');
+	Bid = require('./model/bid.js');
 
 
 mongoose.connect("mongodb://localhost/auction");
