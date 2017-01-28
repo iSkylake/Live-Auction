@@ -1,7 +1,6 @@
 var passport = require('passport');
 var mongoose = require('mongoose');
 var User = mongoose.model('User');
-var Mailjet = '' // require('node-mailjet').connect('**', '**'); connect to api key
 
 var authentications = {}
 var sendJSONresponse = function(res, status, content) {
@@ -10,21 +9,11 @@ var sendJSONresponse = function(res, status, content) {
 };
 // var sendEmail = Mailjet.post('send');
 
-authentications.sendWelcomeEmail = function(req, res) {
-	console.log(req.body.username)
-	var emailData = {
-	    'FromEmail': 'kdshin2010@gmail.com',
-	    'FromName': 'Kyle',
-	    'Subject': 'Hey thanks for signing up for Eat 8 ',
-	    'Text-part': 'Hey thanks for signing up for ea8',
-	    'Recipients': [{'Email': req.body.username}]
-	}
-}
-
 
 authentications.register = function(req, res) {
 	var user = new User();
 	user.username = req.body.username;
+	user.email = req.body.email
 	user.setPassword(req.body.password);
 
 	user.save(function(err) {
@@ -48,7 +37,6 @@ authentications.login = function(req, res) {
 			res.json(404).json(err);
 			return;
 		}
-		console.log('skipped the error part!')
 		if (user) {
 			token = user.generateJwt();
 			res.status(200);

@@ -1,7 +1,7 @@
 (function() {
 	'use strict'
 	angular
-	.module('menuApp')
+	.module('myApp')
 	.factory('AuthService', AuthServiceFunction)
 
 	//Inject here
@@ -22,19 +22,6 @@
 			isLoggedIn: isLoggedIn,
 			getUsername: getUsername
 		}
-		// function sendWelcomeEmail(info) {
-		// 	var deferred = $q.defer()
-		// 	$http.post('/sendWelcomeEmail', info)
-		// 	.success(function(data) {
-		// 		console.log('resolving data to ctrl');
-		// 		deferred.resolve(data)
-		// 	})
-		// 	.error(function(){
-		// 		console.log('error!')
-		// 	})
-		// 	return deferred.promise;
-
-		// }
 
 
 		function saveToken(token) {
@@ -107,8 +94,6 @@
 		}
 
 
-
-
 		function currentUser() {
 		    if(isLoggedIn()){
 		    var token = getToken();
@@ -134,8 +119,6 @@
 				}
 				
 			}
-
-
 
 		function getUserStatus() {
 		  return $http.get('/status')

@@ -4,7 +4,6 @@ var app = angular.module('myApp', [
   .config(function($stateProvider, $urlRouterProvider) {
     // 
     // For any unmatched url, redirect to /state1 
-    $urlRouterProvider.otherwise("/home");
     // 
     // Now set up the states 
     $stateProvider
@@ -29,8 +28,8 @@ var app = angular.module('myApp', [
         url: '/bid_spike',
         templateUrl: 'app/spike/bid_spike.html'
       })
-      .state('signup', {
-        url: '/signup',
+      .state('signup1', {
+        url: '/signup1',
         templateUrl: 'app/login_and_signup/signup.html'
       })
   });

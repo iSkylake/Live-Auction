@@ -11,6 +11,7 @@ var User = new mongoose.Schema({
     unique: true,
     required: true
   },
+  email: String,
   hash: String,
   salt: String
 });

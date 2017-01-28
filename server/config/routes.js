@@ -1,14 +1,21 @@
 var express = require('express'),
-mongoose = require('mongoose'),
-  routes = express.Router(),
-  User = mongoose.model('User'),
-  users = require('../controllers/users.js');
+	  mongoose = require('mongoose'),
+	  routes = express.Router(),
+	  User = mongoose.model('User'),
+	  jwt = require('express-jwt'),
+
+	  auth = jwt({
+	    secret: 'MY_SECRET',
+	    userProperty: 'payload'
+	  }),
+	  users = require('../controllers/users.js'),
+  	  authentications = require('../controllers/authentications.js')
 
 var routes = express.Router();
 
-routes.post('/addUser', function(req, res) {
+routes.post('/register', function(req, res) {
 	console.log('calling')
-	users.create(req, res)
+	authentications.register(req, res)
 })
 
 routes.get('/test', function(req, res) {
