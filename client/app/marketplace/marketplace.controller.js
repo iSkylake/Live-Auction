@@ -66,12 +66,13 @@ angular.module('myApp')
 
 		marketCtrl.itemList = [];
 		marketCtrl.postAuction = function(title, description, image, startDate, startTime, auctionLength, startBid, minBid) {
-			marketService.postItem(title, owner, image, description, startTime)
+			marketService.postItem(title, description, image, startDate, startTime, auctionLength, startBid, minBid)
 				.then(function successCallback(response) {
 					console.log('successfully posted item', response);
 				}, function errorCallback(error) {
 					console.log('failed to retrieve item', error);
 				})
+			$state.go('marketplace');
 		}
 
 		marketCtrl.getItems = function() {
