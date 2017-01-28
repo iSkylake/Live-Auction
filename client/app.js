@@ -27,7 +27,8 @@ var app = angular.module('myApp', [
       })
       .state('bid_spike', {
         url: '/bid_spike',
-        templateUrl: 'app/spike/bid_spike.html'
+        templateUrl: 'app/spike/bid_spike.html',
+        controller: 'BidCtrl as bidCtrl'
       })
       .state('signup', {
         url: '/signup',
