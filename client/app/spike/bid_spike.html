@@ -9,8 +9,8 @@
 <!--       	<div class="medium-4 columns">
       	</div> -->
         <div class="medium-2 columns">
-        	 </br></br></br></br></br>
-        	 <h3><span style="font-weight:bold;">Timer:</span></h3>
+        	 </br></br></br></br>
+        	 <h3><span style="font-weight:bold;">Timer: {{bidCtrl.timer}}</span></h3>
           <div><span style="font-weight:bold;">Current Bid:</span> ${{bidCtrl.currentBid}}</div></br>
           <input type="text" placeholder="Bid" style="width:50%" id="min-bid" name="min-bid" ng-model="bidCtrl.setBid" ng-click="bidCtrl.postBid(bidCtrl.setBid)"/>
           <button type="button" class="button primary medium" ng-click="bidCtrl.postBid(bidCtrl.setBid)">Place Bid</button>

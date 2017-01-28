@@ -31,4 +31,25 @@ angular.module('myApp')
 		// $interval( function(){ $('#bidList').append('<div>George Yu: $20</div>'); }, 40000, true);
 
 
+		bidCtrl.timer = 30;
+ 
+	   var mytimeout = null; // the current timeoutID
+	 
+	    // actual timer method, counts down every second, stops on zero
+	   bidCtrl.onTimeout = function() {
+        if(bidCtrl.counter ===  0) {
+            bidCtrl.$broadcast('timer-stopped', 0);
+            $timeout.cancel(mytimeout);
+            return;
+        }
+        bidCtrl.timer--;
+        mytimeout = $timeout(bidCtrl.onTimeout, 1000);
+	   };
+
+	 
+	   bidCtrl.startTimer = function() {
+	      mytimeout = $timeout(bidCtrl.onTimeout, 1000);
+	   };
+	   bidCtrl.startTimer();
+
 	});
