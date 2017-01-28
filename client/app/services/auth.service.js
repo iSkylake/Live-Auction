@@ -36,6 +36,8 @@
 			var deferred = $q.defer();
 			$http.post('/register', info)
 			.success(function(data) {
+				console.log(data)
+				alert(data)
 				deferred.resolve(saveToken(data.token))
 			})
 			.error(function(){

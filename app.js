@@ -8,7 +8,7 @@ var express = require('express'),
 	hash = require('bcrypt-nodejs'),
 	path = require('path'),
 	passport = require('passport'),
-	localStrategy = require('passport-local' ).Strategy;
+	localStrategy = require('passport-local').Strategy;
 
 	// Bid = require('./model/bid.js');
 
@@ -20,10 +20,14 @@ require('./server/config/mongoose.js')
 var routes = require('./server/config/routes.js')
 
 app.use(express.static(path.join(__dirname, './client')));
+app.use(logger('dev'));
+
 
 app.use(bodyParser.json());
 
 app.use(bodyParser.urlencoded({extended:true}));
+app.use(cookieParser());
+
 
 app.use(require('express-session')({
     secret: 'keyboard cat',
@@ -38,6 +42,7 @@ app.use(routes);
 
 
 app.use(function(req, res, next){
+	console.log(req)
 	var err = new Error('Not Found');
 	err.status = 404;
 	next(err)
@@ -51,9 +56,9 @@ app.use(function(err, req, res) {
   }));
 });
 
-app.use(express.static(path.join(__dirname, 'public')));
 
 
+var debug = require('debug')('passport-mongo');
 
 app.listen(3000, function(){
 	console.log("Server Started");

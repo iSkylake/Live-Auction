@@ -16,7 +16,6 @@
 
 		vm.newUser = {
 			username: "",
-			email: "",
 			password: ""
 		}
 
@@ -26,11 +25,10 @@
 			vm.error = false;
 			vm.disabled = true;
 			AuthService.register(vm.newUser)
-			//success
 			.then(function(data) {
 				console.log(AuthService.currentUser())
 				alert('i am here');
-				$state.go('marketplace')
+				$location.path('/marketplace')
 				vm.diabled = false;
 			})
 			.catch(function() {

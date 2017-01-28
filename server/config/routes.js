@@ -1,7 +1,6 @@
 var express = require('express'),
-	  mongoose = require('mongoose'),
 	  routes = express.Router(),
-	  User = mongoose.model('User'),
+	  passport = require('passport'),
 	  jwt = require('express-jwt'),
 
 	  auth = jwt({
@@ -11,10 +10,10 @@ var express = require('express'),
 	  users = require('../controllers/users.js'),
   	  authentications = require('../controllers/authentications.js')
 
-var routes = express.Router();
+  	  User = require('../models/User.js')
+
 
 routes.post('/register', function(req, res) {
-	console.log('calling')
 	authentications.register(req, res)
 })
 
