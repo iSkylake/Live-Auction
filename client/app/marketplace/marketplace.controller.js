@@ -5,51 +5,51 @@ angular.module('myApp')
 
 		//////// DUMMY DATA //////////
 		var item1 = {
-			title: 'Lion',
+			title: 'Garmin FR230 GPS Watch',
 			owner: 'George',
-			image: 'http://assets.worldwildlife.org/photos/1620/images/carousel_small/bengal-tiger-why-matter_7341043.jpg?1345548942',
-			description: 'This is a Bengal Tiger. It is in the wilderness and lives in the trees and eats at night.',
-			startTime: '5AM'
+			image: '/images/garmin.jpg',
+			description: 'Concise, easy-to-understand charts, graphs, maps and more let you view your activities and track progress toward goals.',
+			startTime: '9am 1/28/2017'
 		}
 
 		var item2 = {
-			title: 'Lion',
+			title: 'Mider Watch',
 			owner: 'George',
-			image: 'http://assets.worldwildlife.org/photos/1620/images/carousel_small/bengal-tiger-why-matter_7341043.jpg?1345548942',
-			description: 'This is a Bengal Tiger. It is in the wilderness and lives in the trees and eats at night.',
-			startTime: '5AM'
+			image: '/images/watch.jpg',
+			description: 'This timepiece features a gold leather band that is sure to catch anyones attention and a 47MM stainless steel case that brings it together.',
+			startTime: '9am 1/28/2017'
 		}
 
 		var item3 = {
-			title: 'Lion',
+			title: 'Men\'s Pocket Watch',
 			owner: 'George',
-			image: 'http://assets.worldwildlife.org/photos/1620/images/carousel_small/bengal-tiger-why-matter_7341043.jpg?1345548942',
-			description: 'This is a Bengal Tiger. It is in the wilderness and lives in the trees and eats at night.',
-			startTime: '5AM'
+			image: '/images/pocketwatch.jpg',
+			description: 'Stylish gold plated pocket watch. This quality timepiece features a 47.0mm case, black dial, rose-toned hands and easy-to-read markers.',
+			startTime: '9am 1/28/2017'
 		}
 
 		var item4 = {
-			title: 'Lion',
+			title: 'Nikon DSLR Camera',
 			owner: 'George',
-			image: 'http://assets.worldwildlife.org/photos/1620/images/carousel_small/bengal-tiger-why-matter_7341043.jpg?1345548942',
-			description: 'This is a Bengal Tiger. It is in the wilderness and lives in the trees and eats at night.',
-			startTime: '5AM'
+			image: '/images/camera.jpg',
+			description: 'This camera has a 30.4-megapixel full-frame CMOS sensor and a 100-32,000 ISO range that lets you take sharp photos.',
+			startTime: '9am 1/28/2017'
 		}
 
 		var item5 = {
-			title: 'Lion',
+			title: 'Fedora Straw Hat',
 			owner: 'George',
-			image: 'http://assets.worldwildlife.org/photos/1620/images/carousel_small/bengal-tiger-why-matter_7341043.jpg?1345548942',
-			description: 'This is a Bengal Tiger. It is in the wilderness and lives in the trees and eats at night.',
-			startTime: '5AM'
+			image: '/images/hat.jpg',
+			description: 'Top off your favorite outfits with our breezy Women\'s Merona Fedora Hat with Black Sash in Natural.',
+			startTime: '9am 1/28/2017'
 		}
 
 		var item6 = {
-			title: 'Lion',
+			title: 'Michael Jordan Jersey',
 			owner: 'George',
-			image: 'http://assets.worldwildlife.org/photos/1620/images/carousel_small/bengal-tiger-why-matter_7341043.jpg?1345548942',
-			description: 'This is a Bengal Tiger. It is in the wilderness and lives in the trees and eats at night.',
-			startTime: '5AM'
+			image: '/images/jersey.jpg',
+			description: 'High quality jersey, breathable and quick-dry. Embroidered stitched letters and numbers.',
+			startTime: '9am 1/28/2017'
 		}
 
 
