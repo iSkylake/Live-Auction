@@ -1,5 +1,7 @@
 var express = require('express'),
+mongoose = require('mongoose'),
   routes = express.Router(),
+  User = mongoose.model('User'),
   users = require('../controllers/users.js');
 
 var routes = express.Router();
@@ -10,7 +12,9 @@ routes.post('/addUser', function(req, res) {
 })
 
 routes.get('/test', function(req, res) {
-	users.test(req, res)
+	User.find({}, function(err, user) {
+		res.send(user)
+	})
 })
 
 
