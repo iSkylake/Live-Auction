@@ -64,9 +64,6 @@ angular.module('myApp')
 
 
 
-
-
-
 		marketCtrl.itemList = [];
 		marketCtrl.postItem = function(title, owner, image, description, startTime) {
 			marketService.postItem(title, owner, image, description, startTime)
@@ -86,12 +83,5 @@ angular.module('myApp')
 					console.log('failed to retrieve item', error);
 				});
 		}
-
-		marketCtrl.description = function() {
-			return 'Here is an item that is displayed in the';
-		}
-
-		marketCtrl.image = "http://assets.worldwildlife.org/photos/1620/images/carousel_small/bengal-tiger-why-matter_7341043.jpg?1345548942";
-
 
 	});
