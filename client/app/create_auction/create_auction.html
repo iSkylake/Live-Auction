@@ -1,3 +1,13 @@
+<!--     marketCtrl.auctionTitle = '';
+    marketCtrl.auctionDescription = '';
+    marketCtrl.auctionStartDate ='';
+    marketCtrl.auctionStartTime = '';
+    marketCtrl.auctionLength = '';
+    marketCtrl.startingBid = '';
+    marketCtrl.minBid = '';
+    marketCtrl.insertPhoto ='';
+ -->
+
 <div class="row">
   <form action="#" method="post" id="create-auction">
     <fieldset>
@@ -9,31 +19,31 @@
       <div class="row">
         <div class="medium-12 columns">
           <label>Auction Title
-            <input type="text" id="title" name="title" />
+            <input type="text" id="title" name="title" ng-model="marketCtrl.auctionTitle" />
           </label>
         </div>
       </div>
       <div class="row">
         <div class="medium-12 columns">
           <label>Auction Description
-            <textarea id="description" name="description"></textarea>
+            <textarea id="description" name="description" ng-model="marketCtrl.auctionDescription"></textarea>
           </label>
         </div>
       </div>
       <div class="row">
         <div class="medium-3 columns">
           <label>Auction Start Date
-            <input type="date" id="start-date" name="start-date" />
+            <input type="date" id="start-date" name="start-date" ng-model="marketCtrl.startDate"/>
           </label>
         </div>
         <div class="medium-3 columns">
           <label>Auction Start Time (EST)
-            <input type="time" id="start-time" name="start-time" />
+            <input type="time" id="start-time" name="start-time" ng-model="marketCtrl.auctionStartTime"/>
           </label>
         </div>
         <div class="medium-2 columns">
           <label>Auction Length
-            <input type="text" id="length-hour" name="length-hour" placeholder="hours"/>
+            <input type="text" id="length-hour" name="length-hour" placeholder="hours" ng-model="marketCtrl.auctionStartTime"/>
           </label>
         </div>
         <div class="medium-2 columns end">
@@ -45,12 +55,12 @@
       <div class="row">
         <div class="medium-3 columns">
           <label>Starting Bid Price ($)
-            <input type="text" id="start-bid" name="start-bid" />
+            <input type="text" id="start-bid" name="start-bid" ng-model="marketCtrl.startingBid"/>
           </label>
         </div>
         <div class="medium-3 columns end">
           <label>Minimum Bid Increase ($)
-            <input type="text" id="min-bid" name="min-bid" />
+            <input type="text" id="min-bid" name="min-bid" ng-model="marketCtrl.minBid"/>
           </label>
         </div>
       </div>
@@ -58,8 +68,8 @@
 <!--         <div class="medium-12 columns">
           <button type="button" class="button secondary medium">Upload Photos</button>
         </div> -->
-          <label>Insert Photo
-            <input type="text" id="min-bid" name="min-bid" />
+          <label style="margin-left:15px; margin-right:20px;">Insert Photo
+            <input type="text" id="min-bid" name="min-bid" ng-model="marketCtrl.insertPhoto"/>
           </label>
       </div>
     </fieldset>
@@ -85,10 +95,19 @@
     <fieldset>
       <div class="row">
         <div class="medium-12 columns">
-          <button type="button" class="button primary medium">Create Auction</button>
+          <button type="button" class="button primary medium" ng-click="marketCtrl.postAuction(marketCtrl.auctionTitle, marketCtrl.auctionDescription, marketCtrl.image, marketCtrl.auctionStartDate, marketCtrl.auctionStartTime, marketCtrl.auctionLength, marketCtrl.startBid, marketCtrl.minBid)">Create Auction</button>
           <button type="button" class="button secondary medium">Cancel</button>
         </div>
       </div>
     </fieldset>
   </form>
 </div>
+<!-- 
+    marketCtrl.auctionTitle = 'hey';
+    marketCtrl.auctionDescription = 'hey';
+    marketCtrl.auctionStartDate ='hey';
+    marketCtrl.auctionStartTime = 'hey';
+    marketCtrl.auctionLength = 'hey';
+    marketCtrl.startingBid = 'hey';
+    marketCtrl.minBid = 'hey';
+    marketCtrl.insertPhoto ='hey'; -->
