@@ -10,7 +10,7 @@ var auctionSchema = new mongoose.Schema({
 	// 	ref: "Bid"
 	// }
 	// ],
-	bids: [Number].
+	bids: [Number],
 	image: String
 });
 
