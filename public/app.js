@@ -13,7 +13,7 @@ var app = angular.module('myApp', [
         templateUrl: "app/auction/auction.view.html"
       })
       .state('marketplace', {
-        url: "/marketplace/item/:item",
+        url: "/marketplace",
         templateUrl: "app/marketplace/marketplace.html",
         controller: "MarketCtrl as marketCtrl"
       })
