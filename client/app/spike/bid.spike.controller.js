@@ -18,6 +18,7 @@ angular.module('myApp')
 		bidCtrl.postBid = function(bid) {
 			$('#bidList').append('<div>Albert Chiu: $25</div>');
 			bidCtrl.currentBid = 25
+			bidCtrl.setBid = '';
 
 			$timeout($('#winnerModal').modal({
         		show: 'true'
