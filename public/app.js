@@ -13,8 +13,9 @@ var app = angular.module('myApp', [
         templateUrl: "app/Auction/auction.view.html"
       })
       .state('marketplace', {
-        url: "/marketplace",
-        templateUrl: "app/marketplace/marketplace.html"
+        url: "/marketplace/:item",
+        templateUrl: "app/marketplace/marketplace.html",
+        controller: "MarketCtrl as marketCtrl"
       })
       .state('private_demo', {
         url: "/private_demo",
