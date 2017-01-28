@@ -29,8 +29,8 @@
 			//success
 			.then(function(data) {
 				console.log(AuthService.currentUser())
-				alert('i am here')
-				$state.go('home')
+				alert('i am here');
+				$state.go('marketplace')
 				vm.diabled = false;
 			})
 			.catch(function() {

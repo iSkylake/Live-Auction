@@ -28,8 +28,8 @@ var app = angular.module('myApp', [
         url: '/bid_spike',
         templateUrl: 'app/spike/bid_spike.html'
       })
-      .state('signup1', {
-        url: '/signup1',
+      .state('signup', {
+        url: '/signup',
         templateUrl: 'app/login_and_signup/signup.html'
       })
   });
