@@ -1,0 +1,24 @@
+{
+  "name": "live-auction",
+  "version": "1.0.0",
+  "description": "",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/iSkylake/Live-Auction.git"
+  },
+  "author": "AuctionLive",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/iSkylake/Live-Auction/issues"
+  },
+  "homepage": "https://github.com/iSkylake/Live-Auction#readme",
+  "dependencies": {
+    "body-parser": "^1.16.0",
+    "express": "^4.14.0",
+    "mongoose": "^4.7.9"
+  }
+}
