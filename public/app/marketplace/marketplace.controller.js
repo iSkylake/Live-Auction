@@ -24,6 +24,41 @@ angular.module('myApp')
 
 		marketCtrl.hey ='ok';
 
+		marketCtrl.postItem = function(title, image, description, startTime) {
+			marketService.postItem;
+		}
+
+
+		// authCtrl.login = function(username, password) {
+		// 	AuthFactory.login(username, password)
+		// 		.then(function successCallback(response) {
+		// 			console.log('success:', response);
+		// 			authCtrl.username = username;
+		// 			authCtrl.password = password;
+		// 			console.log('authCtrl.username', authCtrl.username);
+
+		// 			//store the token in sessionStorage
+		// 			sessionStorage.accessToken = response.data.token;
+		// 			sessionStorage.setItem('username', authCtrl.username);
+
+		// 			$state.go('profile');
+		// 			console.log(response)
+		// 		}, function errorCallback(response) {
+		// 			console.log('error:', response);
+		// 		});
+		// }
+
+
+		// authCtrl.register = function(username, password) {
+		// 	AuthFactory.register(username, password)
+		// 		.then(function successfulCallback(response) {
+		// 			console.log('success:', response);
+		// 			$state.go('home')
+		// 		}, function errorCallback(response) {
+		// 			console.log('error:', response)
+		// 		});
+		// }
+
 
 
 
