@@ -5,10 +5,10 @@ angular.module('myApp')
 
 		//////// DUMMY DATA //////////
 		var item1 = {
-			title: 'Garmin FR230 GPS Watch',
+			title: 'LiveH2H VR Headset',
 			owner: 'George',
-			image: '/images/garmin.jpg',
-			description: 'Concise, easy-to-understand charts, graphs, maps and more let you view your activities and track progress toward goals.',
+			image: '/images/vr.jpg',
+			description: 'A simple to use, limited edition VR headset that lets you explore a variety of apps that unfold all around you.',
 			startTime: '9am 1/28/2017'
 		}
 
