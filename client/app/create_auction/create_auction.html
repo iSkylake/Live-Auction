@@ -1,1 +1,91 @@
-<div>create_auction</div>
+<div class="container" id="create-auction">
+  <form action="#" method="post">
+    <fieldset>
+      <div class="row">
+        <div class="medium-12 columns">
+          <h2>Create a New Auction</h2>
+        </div>
+      </div>
+      <div class="row">
+        <div class="medium-12 columns">
+          <label>Auction Title
+            <input type="text" id="title" name="title" />
+          </label>
+        </div>
+      </div>
+      <div class="row">
+        <div class="medium-12 columns">
+          <label>Auction Description
+            <textarea id="description" name="description"></textarea>
+          </label>
+        </div>
+      </div>
+      <div class="row">
+        <div class="medium-3 columns">
+          <label>Auction Start Date
+            <input type="date" id="start-date" name="start-date" />
+          </label>
+        </div>
+        <div class="medium-3 columns">
+          <label>Auction Start Time (EST)
+            <input type="time" id="start-time" name="start-time" />
+          </label>
+        </div>
+        <div class="medium-2 columns">
+          <label>Auction Length
+            <input type="text" id="length-hour" name="length-hour" placeholder="hours"/>
+          </label>
+        </div>
+        <div class="medium-2 columns end">
+          <label>&nbsp;&nbsp;
+            <input type="text" id="length-min" name="length-min" placeholder="minutes"/>
+          </label>
+        </div>
+      </div>
+      <div class="row">
+        <div class="medium-3 columns">
+          <label>Starting Bid Price ($)
+            <input type="text" id="start-bid" name="start-bid" />
+          </label>
+        </div>
+        <div class="medium-3 columns end">
+          <label>Minimum Bid Increase ($)
+            <input type="text" id="min-bid" name="min-bid" />
+          </label>
+        </div>
+      </div>
+      <div class="row">
+        <div class="medium-12 columns">
+          <button type="button" class="button secondary medium">Upload Photos</button>
+        </div>
+      </div>
+    </fieldset>
+    <fieldset>
+      <div class="row">
+        <div class="medium-12 columns">
+          <h2>Schedule a Demo Session</h2>
+        </div>
+      </div>
+      <div class="row">
+        <div class="medium-3 columns">
+          <label>Demo Start Date
+            <input type="date" id="demo-date" name="demo-date" />
+          </label>
+        </div>
+        <div class="medium-3 columns end">
+          <label>Demo Start Time (EST)
+            <input type="time" id="demo-time" name="demo-time" />
+          </label>
+        </div>
+      </div>
+    </fieldset>
+    <fieldset>
+      <div class="row">
+        <div class="col-md-12">
+          <button type="button" class="button primary medium">Create Auction</button>
+          <button type="button" class="button secondary medium">Cancel</button>
+        </div>
+      </div>
+    </fieldset>
+  </form>
+</div>
