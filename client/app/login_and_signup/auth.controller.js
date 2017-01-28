@@ -27,7 +27,6 @@
 			AuthService.register(vm.newUser)
 			.then(function(data) {
 				console.log(AuthService.currentUser())
-				alert('i am here');
 				$location.path('/marketplace')
 				vm.diabled = false;
 			})
