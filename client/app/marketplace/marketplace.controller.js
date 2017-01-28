@@ -5,10 +5,10 @@ angular.module('myApp')
 
 		//////// DUMMY DATA //////////
 		var item1 = {
-			title: 'Garmin FR230 GPS Watch',
+			title: 'LiveH2H VR Headset',
 			owner: 'George',
-			image: '/images/garmin.jpg',
-			description: 'Concise, easy-to-understand charts, graphs, maps and more let you view your activities and track progress toward goals.',
+			image: '/images/vr.jpg',
+			description: 'A simple to use, limited edition VR headset that lets you explore a variety of apps that unfold all around you.',
 			startTime: '9am 1/28/2017'
 		}
 
@@ -52,6 +52,22 @@ angular.module('myApp')
 			startTime: '9am 1/28/2017'
 		}
 
+		var item7 = {
+			title: 'Garmin FR230 GPS Watch',
+			owner: 'George',
+			image: '/images/garmin.jpg',
+			description: 'Concise, easy-to-use charts, maps, and more let you view your activities, track progress toward goals.',
+			startTime: '9am 1/28/2017'
+		}
+
+		var item8 = {
+			title: 'Apple iPad and iPhone',
+			owner: 'George',
+			image: '/images/ipad.jpg',
+			description: 'The Apple iPad Pro Tablet sports a 9.7-inch retina display with a high resolution and True Tone display.',
+			startTime: '9am 1/28/2017'
+		}
+
 
 		marketCtrl.dummyList = [];
 
@@ -61,6 +77,8 @@ angular.module('myApp')
 		marketCtrl.dummyList.push(item4);
 		marketCtrl.dummyList.push(item5);
 		marketCtrl.dummyList.push(item6);
+		marketCtrl.dummyList.push(item7);
+		marketCtrl.dummyList.push(item8);
 
 
 
