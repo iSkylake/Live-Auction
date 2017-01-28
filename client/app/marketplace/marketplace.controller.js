@@ -1,5 +1,5 @@
 angular.module('myApp')
-	.controller('MarketCtrl', function($stateParams) {
+	.controller('MarketCtrl', function($stateParams, $state) {
 		var marketCtrl = this;
 		console.log("parameter", $stateParams);
 
@@ -82,6 +82,10 @@ angular.module('myApp')
 				}, function errorCallback(error) {
 					console.log('failed to retrieve item', error);
 				});
+		}
+
+		marketCtrl.createAuction = function() {
+			$state.go('create_auction');
 		}
 
 	});
