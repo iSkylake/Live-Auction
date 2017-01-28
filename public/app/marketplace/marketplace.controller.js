@@ -8,7 +8,7 @@ angular.module('myApp')
 			title: 'Lion',
 			owner: 'George',
 			image: 'http://assets.worldwildlife.org/photos/1620/images/carousel_small/bengal-tiger-why-matter_7341043.jpg?1345548942',
-			description: 'This is a Bengal Tiger',
+			description: 'This is a Bengal Tiger. It is in the wilderness and lives in the trees and eats at night.',
 			startTime: '5AM'
 		}
 
@@ -16,7 +16,7 @@ angular.module('myApp')
 			title: 'Lion',
 			owner: 'George',
 			image: 'http://assets.worldwildlife.org/photos/1620/images/carousel_small/bengal-tiger-why-matter_7341043.jpg?1345548942',
-			description: 'This is a Bengal Tiger',
+			description: 'This is a Bengal Tiger. It is in the wilderness and lives in the trees and eats at night.',
 			startTime: '5AM'
 		}
 
@@ -24,7 +24,31 @@ angular.module('myApp')
 			title: 'Lion',
 			owner: 'George',
 			image: 'http://assets.worldwildlife.org/photos/1620/images/carousel_small/bengal-tiger-why-matter_7341043.jpg?1345548942',
-			description: 'This is a Bengal Tiger',
+			description: 'This is a Bengal Tiger. It is in the wilderness and lives in the trees and eats at night.',
+			startTime: '5AM'
+		}
+
+		var item4 = {
+			title: 'Lion',
+			owner: 'George',
+			image: 'http://assets.worldwildlife.org/photos/1620/images/carousel_small/bengal-tiger-why-matter_7341043.jpg?1345548942',
+			description: 'This is a Bengal Tiger. It is in the wilderness and lives in the trees and eats at night.',
+			startTime: '5AM'
+		}
+
+		var item5 = {
+			title: 'Lion',
+			owner: 'George',
+			image: 'http://assets.worldwildlife.org/photos/1620/images/carousel_small/bengal-tiger-why-matter_7341043.jpg?1345548942',
+			description: 'This is a Bengal Tiger. It is in the wilderness and lives in the trees and eats at night.',
+			startTime: '5AM'
+		}
+
+		var item6 = {
+			title: 'Lion',
+			owner: 'George',
+			image: 'http://assets.worldwildlife.org/photos/1620/images/carousel_small/bengal-tiger-why-matter_7341043.jpg?1345548942',
+			description: 'This is a Bengal Tiger. It is in the wilderness and lives in the trees and eats at night.',
 			startTime: '5AM'
 		}
 
@@ -34,6 +58,9 @@ angular.module('myApp')
 		marketCtrl.dummyList.push(item1);
 		marketCtrl.dummyList.push(item2);
 		marketCtrl.dummyList.push(item3);
+		marketCtrl.dummyList.push(item4);
+		marketCtrl.dummyList.push(item5);
+		marketCtrl.dummyList.push(item6);
 
 
 
