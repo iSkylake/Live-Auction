@@ -3,6 +3,8 @@ var mongoose = require("mongoose");
 var AuctionSchema = new mongoose.Schema({
 	name: String,
 	description: String,
+	status: Boolean,
+	time: Number,
 	owner: {
 		type: mongoose.Schema.Types.ObjectId,
 		ref: "User"
