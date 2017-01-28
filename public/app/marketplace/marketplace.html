@@ -1,3 +1,17 @@
+<div>market place</div>
+
+<div class="container">
+  <div class="row" ng-repeat="item in marketCtrl.dummyList">
+    <div class="col">
+      {{item.title}}
+      {{item.owner}}
+      <img style= "width: 100px;"src={{item.image}}/>
+      {{item.description}}
+      {{item.startTime}}
+    </div>
+  </div>
+</div>
+
 <div class='marketplace_container'>
 	<div class="row column text-center">
 		<h2>Live Auctions</h2>
@@ -54,4 +68,5 @@
 		</div>
 	</div>
 </div>
+
 
