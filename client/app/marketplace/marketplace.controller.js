@@ -84,6 +84,8 @@ angular.module('myApp')
 				});
 		}
 
+		// marketCtrl.getItems();
+
 		marketCtrl.createAuction = function() {
 			$state.go('create_auction');
 		}
