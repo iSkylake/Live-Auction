@@ -65,13 +65,14 @@ angular.module('myApp')
 
 
 		marketCtrl.itemList = [];
-		marketCtrl.postItem = function(title, owner, image, description, startTime) {
-			marketService.postItem(title, owner, image, description, startTime)
+		marketCtrl.postAuction = function(title, description, image, startDate, startTime, auctionLength, startBid, minBid) {
+			marketService.postItem(title, description, image, startDate, startTime, auctionLength, startBid, minBid)
 				.then(function successCallback(response) {
 					console.log('successfully posted item', response);
 				}, function errorCallback(error) {
 					console.log('failed to retrieve item', error);
 				})
+			$state.go('marketplace');
 		}
 
 		marketCtrl.getItems = function() {
@@ -84,8 +85,21 @@ angular.module('myApp')
 				});
 		}
 
+		// marketCtrl.getItems();
+
 		marketCtrl.createAuction = function() {
 			$state.go('create_auction');
 		}
+
+		marketCtrl.auctionTitle = 'hey';
+		marketCtrl.auctionDescription = 'hey';
+		marketCtrl.image ='hey';
+		marketCtrl.auctionStartDate ='hey';
+		marketCtrl.auctionStartTime = 'hey';
+		marketCtrl.auctionLength = 'hey';
+		marketCtrl.startBid = 'hey';
+		marketCtrl.minBid = 'hey';
+
+
 
 	});

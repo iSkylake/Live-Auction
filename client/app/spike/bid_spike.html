@@ -1,32 +1,21 @@
-<div ng-controller = 'BidSpikeController' style='padding: 300px'>
-	<div>
-		<h2>Kyle</h2>
-		<form>
-			<label>Bid</label>
-			<input type="" name="">
-			<button>Place Bid</button>
-		</form>
-
-		<h2>Eric</h2>
-		<form>
-			<label>Bid</label>
-			<input type="" name="">
-			<button>Place Bid</button>
-
-		</form>
-
-		<h2>George</h2>
-		<form>
-			<label>Bid</label>
-			<input type="" name="">
-			<button>Place Bid</button>
-
-		</form>
-	</div>
-	<div>
-		<h2>Highest Bid</h2>
-		<p>Highest bid is <strong>$40</strong> from <em>George</em>em</p>
-	</div>
-	
-	
+<div class="row">
+  <form action="#" method="post" id="create-auction">
+    <fieldset>
+      <div class="row">
+      	<div class="medium-8 columns">
+      		<iframe src="" width="700px;" height="500px;"></iframe>
+      		<p>This timepiece features a gold leather band that is sure to catch anyones attention and a 47MM stainless steel case that brings it together.</p>
+      	</div>
+<!--       	<div class="medium-4 columns">
+      	</div> -->
+        <div class="medium-4 columns">
+        	 </br></br></br></br></br>
+          <div><span style="font-weight:bold;">Current Bid:</span> ${{bidCtrl.maxBid}}</div></br>
+          <input type="text" placeholder="Place your bid here" style="width:50%" id="min-bid" name="min-bid" ng-model="bidCtrl.setBid" ng-click="bidCtrl.postBid(bidCtrl.setBid)"/>
+          <button type="button" class="button primary medium" ng-click="marketCtrl.postAuction(marketCtrl.auctionTitle, marketCtrl.auctionDescription, marketCtrl.image, marketCtrl.auctionStartDate, marketCtrl.auctionStartTime, marketCtrl.auctionLength, marketCtrl.startBid, marketCtrl.minBid)">Place Bid</button>
+          <button type="button" class="button secondary medium">Cancel</button>
+        </div>
+      </div>
+    </fieldset>
+  </form>
 </div>
