@@ -6,7 +6,7 @@ angular.module('myApp')
 		//////// DUMMY DATA //////////
 		var item1 = {
 			title: 'LiveH2H VR Headset',
-			owner: 'George',
+			owner: 'Kyle S.',
 			image: '/images/vr.jpg',
 			description: 'A simple to use, limited edition VR headset that lets you explore a variety of apps that unfold all around you.',
 			startTime: '9am 1/28/2017'
@@ -14,7 +14,7 @@ angular.module('myApp')
 
 		var item2 = {
 			title: 'Mider Watch',
-			owner: 'George',
+			owner: 'Jordan E.',
 			image: '/images/watch.jpg',
 			description: 'This timepiece features a gold leather band that is sure to catch anyones attention and a 47MM stainless steel case that brings it together.',
 			startTime: '9am 1/28/2017'
@@ -22,7 +22,7 @@ angular.module('myApp')
 
 		var item3 = {
 			title: 'Men\'s Pocket Watch',
-			owner: 'George',
+			owner: 'Terry L.',
 			image: '/images/pocketwatch.jpg',
 			description: 'Stylish gold plated pocket watch. This quality timepiece features a 47.0mm case, black dial, rose-toned hands and easy-to-read markers.',
 			startTime: '9am 1/28/2017'
@@ -30,7 +30,7 @@ angular.module('myApp')
 
 		var item4 = {
 			title: 'Nikon DSLR Camera',
-			owner: 'George',
+			owner: 'George Y.',
 			image: '/images/camera.jpg',
 			description: 'This camera has a 30.4-megapixel full-frame CMOS sensor and a 100-32,000 ISO range that lets you take sharp photos.',
 			startTime: '9am 1/28/2017'
@@ -38,7 +38,7 @@ angular.module('myApp')
 
 		var item5 = {
 			title: 'Fedora Straw Hat',
-			owner: 'George',
+			owner: 'Albert C.',
 			image: '/images/hat.jpg',
 			description: 'Top off your favorite outfits with our breezy Women\'s Merona Fedora Hat with Black Sash in Natural.',
 			startTime: '9am 1/28/2017'
@@ -46,7 +46,7 @@ angular.module('myApp')
 
 		var item6 = {
 			title: 'Michael Jordan Jersey',
-			owner: 'George',
+			owner: 'Javier A.',
 			image: '/images/jersey.jpg',
 			description: 'High quality jersey, breathable and quick-dry. Embroidered stitched letters and numbers.',
 			startTime: '9am 1/28/2017'
@@ -54,7 +54,7 @@ angular.module('myApp')
 
 		var item7 = {
 			title: 'Garmin FR230 GPS Watch',
-			owner: 'George',
+			owner: 'Susan L.',
 			image: '/images/garmin.jpg',
 			description: 'Concise, easy-to-use charts, maps, and more let you view your activities, track progress toward goals.',
 			startTime: '9am 1/28/2017'
@@ -62,7 +62,7 @@ angular.module('myApp')
 
 		var item8 = {
 			title: 'Apple iPad and iPhone',
-			owner: 'George',
+			owner: 'Jim Y.',
 			image: '/images/ipad.jpg',
 			description: 'The Apple iPad Pro Tablet sports a 9.7-inch retina display with a high resolution and True Tone display.',
 			startTime: '9am 1/28/2017'
