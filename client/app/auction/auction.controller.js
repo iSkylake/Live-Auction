@@ -1,9 +1,11 @@
-(function() {
-	'use strict';
-	angular.module('myApp').controller('AuctionController', ['$stateParams', AuctionController]);
+angular.module('myApp')
+	.controller('AuctionCtrl as auctionCtrl', function($state) {
+		var auctionCtrl = this;
 
-	function AuctionController($stateParams) {
-		console.log('hello');
-		console.log($stateParams.item)
-	}
-})();
+		auctionCtrl.joinAuction = function() {
+			$state.go('bid_spike');
+		}
+
+
+
+	});

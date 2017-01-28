@@ -9,7 +9,8 @@ var app = angular.module('myApp', [
     $stateProvider
       .state('Auction', {
         url: "/auction",
-        templateUrl: "app/auction/auction.view.html"
+        templateUrl: "app/auction/auction.view.html",
+        controller: "AuctionCtrl as auctionCtrl"
       })
       .state('marketplace', {
         url: "/marketplace",

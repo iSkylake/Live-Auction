@@ -10,12 +10,33 @@
       	</div> -->
         <div class="medium-2 columns">
         	 </br></br></br></br></br>
-          <div><span style="font-weight:bold;">Current Bid:</span> ${{bidCtrl.maxBid}}</div></br>
-          <input type="text" placeholder="Place your bid here" style="width:50%" id="min-bid" name="min-bid" ng-model="bidCtrl.setBid" ng-click="bidCtrl.postBid(bidCtrl.setBid)"/>
-          <button type="button" class="button primary medium" ng-click="marketCtrl.postAuction(marketCtrl.auctionTitle, marketCtrl.auctionDescription, marketCtrl.image, marketCtrl.auctionStartDate, marketCtrl.auctionStartTime, marketCtrl.auctionLength, marketCtrl.startBid, marketCtrl.minBid)">Place Bid</button>
+          <div><span style="font-weight:bold;">Current Bid:</span> ${{bidCtrl.currentBid}}</div></br>
+          <input type="text" placeholder="Bid" style="width:50%" id="min-bid" name="min-bid" ng-model="bidCtrl.setBid" ng-click="bidCtrl.postBid(bidCtrl.setBid)"/>
+          <button type="button" class="button primary medium" ng-click="bidCtrl.postBid(bidCtrl.setBid)">Place Bid</button>
           <button type="button" class="button secondary medium">Cancel</button>
+          <div id="bidList"><span style="font-weight:bold;">Bidders</span></div>
         </div>
       </div>
     </fieldset>
   </form>
+</div>
+
+<div id="winnerModal" class="modal fade" role="dialog">
+  <div class="modal-dialog">
+
+    <!-- Modal content-->
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal">&times;</button>
+        <h4 class="modal-title">Albert Chiu has won GoogleCard Board for $25!</h4>
+      </div>
+      <div class="modal-body">
+        <p>Some text in the modal.</p>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+      </div>
+    </div>
+
+  </div>
 </div>
