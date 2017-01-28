@@ -12,4 +12,12 @@ var app = angular.module('myApp', [
         url: "/auction",
         templateUrl: "app/AuctionCtrl/auction.view.html"
       })
+      .state('marketplace', {
+        url: "/marketplace",
+        templateUrl: "app/marketplace/marketplace.html"
+      })
+      .state('private_demo', {
+        url: "/private_demo",
+        templateUrl: "app/private_demo/private_demo.html"
+      })
   });
