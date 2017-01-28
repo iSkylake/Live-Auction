@@ -30,7 +30,7 @@ angular.module('myApp')
 		}
 
 		function getItems() {
-			$http.get('/getItems', item)
+			$http.get('/getItems')
 			.success(function(data) {
 				console.log('successfully retrieved data', data);
 			})

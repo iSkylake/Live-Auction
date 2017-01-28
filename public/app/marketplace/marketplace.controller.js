@@ -7,13 +7,33 @@ angular.module('myApp')
 
 		marketCtrl.itemList = [];
 
-		marketCtrl.postItem = function(title, image, description, startTime) {
-			var item = {};
-			item.title = title;
-			item.image = image;
-			item.description = description;
-			item.startTime = startTime;
-			return item;
+		// marketCtrl.postItem = function(title, image, description, startTime) {
+		// 	var item = {};
+		// 	item.title = title;
+		// 	item.image = image;
+		// 	item.description = description;
+		// 	item.startTime = startTime;
+		// 	return item;
+		// }
+		
+		marketCtrl.itemList = [];
+		marketCtrl.postItem = function(title, owner, image, description, startTime) {
+			marketService.postItem(title, owner, image, description, startTime)
+				.then(function successCallback(response) {
+					console.log('successfully posted item', response);
+				}, function errorCallback(error) {
+					console.log('failed to retrieve item', error);
+				})
+		}
+
+		marketCtrl.getItems = function() {
+			marketService.getItems()
+				.then(function successCallback(response) {
+					console.log('successfully retrieved item item', response);
+					marketCtrl.itemList = response;
+				}, function errorCallback(error) {
+					console.log('failed to retrieve item', error);
+				});
 		}
 
 		marketCtrl.description = function() {
@@ -21,46 +41,6 @@ angular.module('myApp')
 		}
 
 		marketCtrl.image = "http://assets.worldwildlife.org/photos/1620/images/carousel_small/bengal-tiger-why-matter_7341043.jpg?1345548942";
-
-		marketCtrl.hey ='ok';
-
-		marketCtrl.postItem = function(title, image, description, startTime) {
-			marketService.postItem;
-		}
-
-
-		// authCtrl.login = function(username, password) {
-		// 	AuthFactory.login(username, password)
-		// 		.then(function successCallback(response) {
-		// 			console.log('success:', response);
-		// 			authCtrl.username = username;
-		// 			authCtrl.password = password;
-		// 			console.log('authCtrl.username', authCtrl.username);
-
-		// 			//store the token in sessionStorage
-		// 			sessionStorage.accessToken = response.data.token;
-		// 			sessionStorage.setItem('username', authCtrl.username);
-
-		// 			$state.go('profile');
-		// 			console.log(response)
-		// 		}, function errorCallback(response) {
-		// 			console.log('error:', response);
-		// 		});
-		// }
-
-
-		// authCtrl.register = function(username, password) {
-		// 	AuthFactory.register(username, password)
-		// 		.then(function successfulCallback(response) {
-		// 			console.log('success:', response);
-		// 			$state.go('home')
-		// 		}, function errorCallback(response) {
-		// 			console.log('error:', response)
-		// 		});
-		// }
-
-
-
 
 
 	});
