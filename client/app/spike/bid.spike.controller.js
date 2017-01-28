@@ -2,7 +2,8 @@ angular.module('myApp')
 	.controller('BidCtrl', function($stateParams, $http) {
 		var bidCtrl = this;
 
-		bidCtrl.setBid = 5;
+		// bidCtrl.setBid = 5;
+		bidCtrl.maxBid = 10;
 
 		bidCtrl.postBid = function(bid) {
 			$http.post('/objectId', bid)
