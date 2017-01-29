@@ -25,14 +25,14 @@ angular.module('myApp')
     		}),3000); 
 		}
 
-		$interval( function(){ $('#bidList').append('<div>Kyle Shin: $10</div>'); bidCtrl.currentBid = 10;}, 1000, true);
-		$interval( function(){ $('#bidList').append('<div>Terry Lee: $12</div>'); bidCtrl.currentBid = 12;}, 10000, true);
-		$interval( function(){ $('#bidList').append('<div>George Yu: $14</div>'); bidCtrl.currentBid = 14;}, 20000, true);
-		$interval( function(){ $('#bidList').append('<div>Eric Eng: $20</div>'); bidCtrl.currentBid = 20;}, 30000, true);
+		$interval( function(){ $('#bidList').append('<div>Kyle Shin: $10</div>'); bidCtrl.currentBid = 10;}, 50000, true);
+		$interval( function(){ $('#bidList').append('<div>Terry Lee: $12</div>'); bidCtrl.currentBid = 12;}, 70000, true);
+		$interval( function(){ $('#bidList').append('<div>George Yu: $14</div>'); bidCtrl.currentBid = 14;}, 90000, true);
+		$interval( function(){ $('#bidList').append('<div>Eric Eng: $20</div>'); bidCtrl.currentBid = 20;}, 100000, true);
 		// $interval( function(){ $('#bidList').append('<div>George Yu: $20</div>'); }, 40000, true);
 
 
-		bidCtrl.timer = 100;
+		bidCtrl.timer = 300;
  
 	   var mytimeout = null; // the current timeoutID
 	 
